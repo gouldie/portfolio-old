@@ -1,2 +1,2 @@
 # gouldie.github.io
-My portfolio.
+coming soon.
