@@ -10,12 +10,13 @@
     <title>Matthew Gould</title>
   </head>
   <body>
-    <div class='bg-img bg-img-1'>
+    <img src='./public/imgs/bg-img-1.png' alt='img' />
+    <!-- <div class='bg-img bg-img-1'> -->
       <div class='caption'>
         <h1>Matthew Gould</h1>
         <p>Full-Stack web developer</p>
       </div>
-    </div>
+    <!-- </div> -->
 
     <div class='text'>
       <h1>Projects</h1>
@@ -23,7 +24,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta autem iusto exercitationem perspiciatis maxime sunt quasi saepe voluptate ex!</p>
     </div>
 
-    <div class='bg-img bg-img-2'>
+    <div class='bg-img bg-img-1'>
       <div class='caption'>
         <!-- <h1>Less Height</h1> -->
       </div>
@@ -34,10 +35,19 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta autem iusto exercitationem perspiciatis maxime sunt quasi saepe voluptate ex!</p>
     </div>
 
-    <div class='bg-img bg-img-3'>
+    <div class='bg-img bg-img-2'>
       <div class='caption'>
         <!-- <h1>Less Height</h1> -->
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+    <script>
+      var image = document.getElementsByTagName('img');
+
+      new simpleParallax(image, {
+        scale: 1.5
+      });
+    </script>
   </body>
 </html>
