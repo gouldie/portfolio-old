@@ -12,52 +12,68 @@
   <body>
     <div class='hero'>
       <div class='header'>
-        <p>Projects</p>
-        <p>Contact</p>
+        <p class='projects-button'>Projects</p>
+        <p class='contact-button'>Contact</p>
       </div>
       <div class='caption'>
         <h1>Matthew Gould</h1>
-        <p>Full-Stack web developer, 3 years commercial experience. React, Node, MongoDB.</p>
+        <p>Full-Stack web developer, 3 years commercial experience. React, Node,
+          MongoDB.</p>
       </div>
     </div>
-    
-    <div class='text'>
-      <h1>Projects</h1>
-      <h3>Breaking Free Group company website</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta autem iusto exercitationem perspiciatis maxime sunt quasi saepe voluptate ex!</p>
+
+    <div class='projects'>
+      <div class='text'>
+        <h1>Projects</h1>
+        <h3>Breaking Free Group company website</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut
+          est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta
+          autem iusto exercitationem perspiciatis maxime sunt quasi saepe
+          voluptate ex!</p>
+      </div>
+
+      <div class='bg-img bg-img-1'></div>
+
+      <div class='text'>
+        <h3>Simon Game</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut
+          est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta
+          autem iusto exercitationem perspiciatis maxime sunt quasi saepe
+          voluptate ex!</p>
+      </div>
+
+      <div class='bg-img bg-img-2'></div>
+
+      <div class='text'>
+        <h3>Roguelike Dungeon Crawler</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut
+          est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta
+          autem iusto exercitationem perspiciatis maxime sunt quasi saepe
+          voluptate ex!</p>
+      </div>
+
+      <div class='bg-img bg-img-3'></div>
     </div>
 
-    <div class='bg-img bg-img-1'></div>
+    <div class='contact'>
+      <div class='text'>
+        <h1>Contact</h1>
+      </div>
 
-    <div class='text'>
-      <h3>Simon Game</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta autem iusto exercitationem perspiciatis maxime sunt quasi saepe voluptate ex!</p>
+
+      <div style='height: 500px;'>
+        <p>contact form</p>
+      </div>
     </div>
-
-    <div class='bg-img bg-img-2'></div>
-
-    <div class='text'>
-      <h3>Roguelike Dungeon Crawler</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam ut est ipsam neque provident blanditiis, laborum culpa! Dolorum soluta autem iusto exercitationem perspiciatis maxime sunt quasi saepe voluptate ex!</p>
-    </div>
-
-    <div class='bg-img bg-img-3'></div>
-
-    <div class='text'>
-      <h1>Contact</h1>
-    </div>
-
-    <div style='height: 500px;'>
-      <p>contact form</p>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
-      var image = document.getElementsByTagName('img');
-
-      new simpleParallax(image, {
-        scale: 1.5
-      });
+      document.querySelector('.projects-button').addEventListener('click', function() {
+        document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' })
+      })
+      
+      document.querySelector('.contact-button').addEventListener('click', function() {
+        document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' })
+      })
     </script>
   </body>
 </html>
