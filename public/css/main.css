@@ -130,11 +130,12 @@ body:hover .hero p {
   text-align: justify;
 }
 
-.text h1 {
+h2 {
+  margin-top: 30px;
   text-align: center;
 }
 
-.text hr {
+hr {
   width: 100px;
 }
 
