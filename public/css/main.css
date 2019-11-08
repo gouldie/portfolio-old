@@ -1,4 +1,4 @@
-*, *:after, *:before {
+#hero *, #hero:after, #hero:before {
   box-sizing:border-box;
   box-sizing: border-box;
   transition: all .6s ease;
@@ -30,7 +30,7 @@ body {
   color: #114d4d;
 }
 
-.hero {
+#hero {
   height: 100vh;
   margin: 0;
 	width: 100%;
@@ -42,7 +42,7 @@ body {
 	animation: gradient 15s ease infinite;
 }
 
-.hero .caption {
+#hero .caption {
   width: 100%;
   padding: 3rem;
   /* border: 1px solid white; */
@@ -57,7 +57,7 @@ body {
   z-index: 1;
 }
 
-.hero::before {
+#hero::before {
   content:'';
   position: absolute;
   top:0;
@@ -67,7 +67,7 @@ body {
   background-color: rgba(0,0,0,.5);
 }
 
-.hero::after {
+#hero::after {
   content:'';
   position: absolute;
   top:0;
@@ -79,17 +79,17 @@ body {
   transform: scale(.5);
 }
 
-body:hover .hero::before {
+body:hover #hero::before {
   opacity: 0;
 }
 
-body:hover .hero::after {
+body:hover #hero::after {
   opacity: 1;
   transform: scale(.8);
   background-color: rgba(0,0,0,.3);
 }
 
-body:hover .hero p {
+body:hover #hero p {
   opacity: 1;
   transform: none;
 }
@@ -133,6 +133,7 @@ body:hover .hero p {
 h2 {
   margin-top: 30px;
   text-align: center;
+  color: #fff;
 }
 
 hr {
@@ -162,6 +163,8 @@ hr {
   margin: 0;
   opacity: 0;
 }
+
+
 
 @keyframes gradient {
 	0% {

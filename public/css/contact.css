@@ -1,0 +1,37 @@
+#contact {
+  padding: 1px 0 50px;
+  text-align: center;
+  background: #252934;
+}
+
+form {
+  display: inline-block;
+  min-width: 500px;
+  margin-top: 30px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  padding: 10px 15px;
+  background: #151b21;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  color: #fff;
+}
+
+textarea {
+  min-height: 150px;
+  margin-bottom: 8px;
+  margin-right: 0 !important;
+}
+
+input[type=submit] {
+  max-width: 100px;
+  border: 2px solid #fff;
+  background: transparent;
+  float: right;
+}

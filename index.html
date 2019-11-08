@@ -5,12 +5,14 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/contact.css">
+    <link rel="stylesheet" href="public/css/projects.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <title>Matthew Gould</title>
   </head>
   <body>
-    <div class='hero'>
+    <section id='hero'>
       <div class='header'>
         <p class='projects-button'>Projects</p>
         <p class='contact-button'>Contact</p>
@@ -20,9 +22,9 @@
         <p>Full-Stack web developer, 3 years commercial experience. React, Node,
           MongoDB.</p>
       </div>
-    </div>
+    </section>
 
-    <div class='projects'>
+    <section id='projects'>
       <h2>Projects</h2>
       <hr />
 
@@ -55,14 +57,19 @@
       </div>
 
       <div class='bg-img bg-img-3'></div> -->
-    </div>
+    </section>
 
-    <div class='contact'>
+    <section id='contact'>
       <h2>Contact</h2>
       <hr />
 
-      <p>contact form</p>
-    </div>
+      <form>
+        <input name='name' type='text' placeholder='Name' >
+        <input name='email' type='email' placeholder='Email' >
+        <textarea name='message' type='text' placeholder='Your message'></textarea>
+        <input name='submit' type='submit' value='SUBMIT' >
+      </form>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
