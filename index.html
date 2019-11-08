@@ -74,11 +74,15 @@
       src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
       document.querySelector('.projects-button').addEventListener('click', function() {
-        document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' })
+        document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })
       })
       
       document.querySelector('.contact-button').addEventListener('click', function() {
-        document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' })
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })
+      })
+
+      document.querySelector('input[type="submit"]').addEventListener('click', function(e) {
+        e.preventDefault()
       })
     </script>
   </body>

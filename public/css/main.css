@@ -132,12 +132,13 @@ body:hover #hero p {
 
 h2 {
   margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
   color: #fff;
 }
 
 hr {
-  width: 100px;
+  width: 50px;
 }
 
 .caption {
