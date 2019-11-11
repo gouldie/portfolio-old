@@ -122,14 +122,6 @@ body:hover #hero p {
   background-image: url('../imgs/roguelike.png');
 }
 
-.text {
-  color: #777;
-  background-color: white;
-  text-align: center;
-  padding: 50px 80px;
-  text-align: justify;
-}
-
 h2 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -139,6 +131,7 @@ h2 {
 
 hr {
   width: 50px;
+  margin-bottom: 0;
 }
 
 .caption {

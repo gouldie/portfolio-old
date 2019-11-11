@@ -1,4 +1,16 @@
 #projects {
   padding: 1px 0 50px;
-  background: #6d7486;
+  /* background: #6d7486; */
+}
+
+#projects h2 {
+  color: gray;
+}
+
+.project-desc {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 25px 80px;
+  text-align: justify;
 }
