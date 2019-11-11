@@ -2,13 +2,21 @@
   color: gray;
 }
 
-#skills div {
+.icon-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin: 30px auto 0;
   padding: 0 30px;
+  max-width: 1000px;
+}
+
+.icon-container div {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #skills img {
@@ -43,4 +51,23 @@
 #skills .icon-meteor {
   width: 130px;
   top: -7px;
+}
+
+@media screen and (max-width: 900px) {
+  .icon-container {
+    flex-direction: column;
+  }
+  .icon-container div {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  #skills .icon-nodejs {
+    left: 20px;
+  }
+  #skills .icon-meteor {
+    left: 21px;
+  }
+  #skills .icon-mongodb {
+    right: 20px;
+  }
 }
