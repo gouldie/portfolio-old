@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .project-desc {
+    padding: 10px 15px;
+  }
   .project-desc h3 {
     font-size: 17px;
   }
