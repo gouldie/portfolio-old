@@ -199,11 +199,13 @@ hr {
   }
   .caption p {
     font-size: 2vw;
+    line-height: 2em;
   }
 }
 
 @media screen and (max-width: 550px) {
   .caption p {
     font-size: 2.5vw;
+    letter-spacing: 0.025em;
   }
 }
