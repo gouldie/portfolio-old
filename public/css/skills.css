@@ -21,7 +21,7 @@
 
 #skills img {
   width: 100px;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
 }
 
@@ -45,7 +45,7 @@
 
 #skills .icon-sass {
   width: 80px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 #skills .icon-meteor {
