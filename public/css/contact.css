@@ -1,13 +1,17 @@
 #contact {
+  display: flex;
+  flex-direction: column;
   padding: 1px 0 30px;
   text-align: center;
   background: #252934;
 }
 
 form {
-  display: inline-block;
-  min-width: 500px;
-  margin-top: 30px;
+  /* display: block; */
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto 0;
+  padding: 0 20px;
 }
 
 input, textarea {
