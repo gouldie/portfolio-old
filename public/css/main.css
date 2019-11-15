@@ -81,38 +81,6 @@ body {
   transform: scale(0.5);
 }
 
-@media screen and (max-width: 1024px) {
-  body #hero::before {
-    opacity: 0;
-  }
-  
-  body #hero::after {
-    opacity: 1;
-    transform: scale(0.8);
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  body #hero p {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-body:hover #hero::before {
-  opacity: 0;
-}
-
-body:hover #hero::after {
-  opacity: 1;
-  transform: scale(0.8);
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-body:hover #hero p {
-  opacity: 1;
-  transform: none;
-}
-
 .simpleParallax {
   height: 100vh;
 }
@@ -173,7 +141,8 @@ hr {
 .caption p {
   font-size: 1.5vw;
   color: #fff;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 85%;
   opacity: 0;
 }
 
@@ -186,5 +155,55 @@ hr {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body:hover #hero::before {
+    opacity: 0;
+  }
+  
+  body:hover #hero::after {
+    opacity: 1;
+    transform: scale(0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  body:hover #hero p {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body #hero::before {
+    opacity: 0;
+  }
+  
+  body #hero::after {
+    opacity: 1;
+    transform: scaleX(0.8) scaleY(0.5);
+    /* transform: scaleY(0.5); */
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  body #hero p {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .caption h1 {
+    letter-spacing: 0.2rem;
+  }
+  .caption p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .caption p {
+    font-size: 2.5vw;
   }
 }
