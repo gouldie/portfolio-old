@@ -81,6 +81,23 @@ body {
   transform: scale(0.5);
 }
 
+@media screen and (max-width: 1024px) {
+  body #hero::before {
+    opacity: 0;
+  }
+  
+  body #hero::after {
+    opacity: 1;
+    transform: scale(0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  body #hero p {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 body:hover #hero::before {
   opacity: 0;
 }
