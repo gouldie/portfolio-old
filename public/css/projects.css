@@ -9,3 +9,12 @@
   padding: 25px 30px;
   text-align: justify;
 }
+
+@media screen and (max-width: 600px) {
+  .project-desc h3 {
+    font-size: 17px;
+  }
+  .project-desc p {
+    font-size: 14px;
+  }
+}
