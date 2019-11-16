@@ -111,9 +111,11 @@
         e.preventDefault()
       })
 
-      const windowHeight = window.innerHeight
-      console.log(windowHeight + 'px')
-      document.getElementById('hero').style.height = windowHeight + 'px'
+      document.getElementById('hero').style.height = window.innerHeight + 'px'
+      
+      window.addEventListener('resize', function() {
+        document.getElementById('hero').style.height = window.innerHeight + 'px'
+      })
     </script>
   </body>
 </html>
