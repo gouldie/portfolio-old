@@ -20,10 +20,17 @@ form p {
   margin: 0;
 }
 
-form p.visible {
+.visible {
   visibility: visible;
-  height: 16px; 
+  /* height: 16px;  */
   margin-bottom: 15px;
+}
+.hidden {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
 }
 
 #sent {
@@ -61,7 +68,13 @@ button[type=submit] {
   cursor: pointer;
 }
 
-#contact img {
+form>img {
+  width: 60px;
+  float: right;
+  visibility: hidden;
+}
+
+#contact>img {
   display: block;
   margin: 20px auto 0;
   width: 50px;

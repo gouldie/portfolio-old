@@ -94,7 +94,8 @@
         <p id='sent'>Your message has been sent.</p>
         <p id='incomplete'>Please complete all fields.</p>
         <p id='error'>Failed to send message. Please try again.</p>
-        <button type='submit'>SUBMIT</button>
+        <button id='submit' type='submit'>SUBMIT</button>
+        <img id='loader' src='public/imgs/loader.svg' />
       </form>
 
       <img src="public/imgs/linkedin.svg" alt="linkedin icon" onClick='window.open("https://www.linkedin.com/in/matthew-gould/")'>
@@ -122,6 +123,15 @@
         var contact = document.getElementsByTagName('input')[1].value
         var message = document.getElementsByTagName('textarea')[0].value
 
+        if (!name || !contact || !message) {
+          document.getElementById('incomplete').classList = 'visible'
+          return
+        }
+
+        // Start loader
+        document.getElementById('loader').classList = 'visible'
+        document.getElementById('submit').classList = 'hidden'
+
         axios.post('https://formspree.io/xrggodyg', {
           name: name,
           contact: contact,
@@ -131,11 +141,19 @@
             document.getElementById('sent').classList = 'visible'
             document.getElementById('incomplete').classList = ''
             document.getElementById('error').classList = ''
+
+            // End loader
+            document.getElementById('loader').classList = 'hidden'
+            document.getElementById('submit').classList = 'visible'
           })
           .catch(function(err) {
             document.getElementById('sent').classList = ''
             document.getElementById('incomplete').classList = ''
             document.getElementById('error').classList = 'visible'
+
+            // End loader
+            document.getElementById('loader').classList = 'hidden'
+            document.getElementById('submit').classList = 'visible'
           })
       })
 
