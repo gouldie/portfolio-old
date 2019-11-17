@@ -14,7 +14,26 @@ form {
   /* padding: 0 20px; */
 }
 
-input, textarea {
+form p {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+
+form p.visible {
+  visibility: visible;
+  height: 16px; 
+  margin-bottom: 15px;
+}
+
+#sent {
+  color: green;
+}
+#incomplete, #error {
+  color: red;
+}
+
+input, textarea, button {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -34,7 +53,7 @@ textarea {
   font-family: Helvetica;
 }
 
-input[type=submit] {
+button[type=submit] {
   max-width: 100px;
   border: 2px solid #fff;
   background: transparent;

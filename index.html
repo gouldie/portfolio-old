@@ -87,15 +87,19 @@
       <h2>Contact</h2>
       <hr />
 
-      <form>
+      <form action="https://formspree.io/meqqpjdj" method="POST" onsubmit="">
         <input name='name' type='text' placeholder='Name' >
         <input name='email' type='email' placeholder='Email' >
         <textarea name='message' type='text' placeholder='Your message'></textarea>
-        <input name='submit' type='submit' value='SUBMIT' >
+        <p id='sent'>Your message has been sent.</p>
+        <p id='incomplete'>Please complete all fields.</p>
+        <p id='error'>Failed to send message. Please try again.</p>
+        <button type='submit'>SUBMIT</button>
       </form>
 
       <img src="public/imgs/linkedin.svg" alt="linkedin icon" onClick='window.open("https://www.linkedin.com/in/matthew-gould/")'>
     </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js'></script>
     <script
       src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
@@ -107,12 +111,36 @@
         document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })
       })
 
-      document.querySelector('input[type="submit"]').addEventListener('click', function(e) {
+      document.querySelector('button[type="submit"]').addEventListener('click', function(e) {
         e.preventDefault()
+
+        document.getElementById('sent').classList = ''
+        document.getElementById('incomplete').classList = ''
+        document.getElementById('error').classList = ''
+
+        var name = document.getElementsByTagName('input')[0].value
+        var contact = document.getElementsByTagName('input')[1].value
+        var message = document.getElementsByTagName('textarea')[0].value
+
+        axios.post('https://formspree.io/xrggodyg', {
+          name: name,
+          contact: contact,
+          message: message
+        })
+          .then(function(res) {
+            document.getElementById('sent').classList = 'visible'
+            document.getElementById('incomplete').classList = ''
+            document.getElementById('error').classList = ''
+          })
+          .catch(function(err) {
+            document.getElementById('sent').classList = ''
+            document.getElementById('incomplete').classList = ''
+            document.getElementById('error').classList = 'visible'
+          })
       })
 
       document.getElementById('hero').style.height = window.innerHeight + 'px'
-      
+
       window.addEventListener('resize', function() {
         document.getElementById('hero').style.height = window.innerHeight + 'px'
       })
