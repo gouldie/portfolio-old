@@ -40,6 +40,11 @@
   background-image: url("../imgs/wklog.png");
 }
 
+.bg-img-5 {
+  min-height: 400px;
+  background-image: url("../imgs/modelling.png");
+}
+
 @media screen and (max-width: 600px) {
   .project-desc {
     padding: 10px 15px;
