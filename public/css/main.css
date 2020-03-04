@@ -95,8 +95,7 @@ a {
 }
 
 h2 {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 0;
   text-align: center;
   color: #fff;
 }

@@ -15,6 +15,7 @@
   <body>
     <section id='hero'>
       <div class='header'>
+        <p class='skills-button'>Skills</p>
         <p class='projects-button'>Projects</p>
         <p class='contact-button'>Contact</p>
       </div>
@@ -125,6 +126,10 @@
     <script
       src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
+      document.querySelector('.skills-button').addEventListener('click', function() {
+        document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' })
+      })
+
       document.querySelector('.projects-button').addEventListener('click', function() {
         document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })
       })
