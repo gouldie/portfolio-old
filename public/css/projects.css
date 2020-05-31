@@ -49,6 +49,11 @@
   background-image: url("../imgs/modelling.png");
 }
 
+.bg-img-6 {
+  min-height: 400px;
+  background-image: url("../imgs/hackernews.png");
+}
+
 @media screen and (max-width: 600px) {
   .project-desc {
     padding: 10px 15px;
