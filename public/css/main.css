@@ -43,7 +43,6 @@ a {
   color: #fff;
   background-image: url('../imgs/test1.jpg');
   background-size: cover;
-  -webkit-transform: translate3d(0,0,0);
 }
 
 #hero::before {
@@ -53,7 +52,7 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
 }
 
 .caption {
