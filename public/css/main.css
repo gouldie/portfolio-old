@@ -42,7 +42,7 @@ a {
   width: 100%;
   color: #fff;
   background-image: url('../imgs/test1.jpg');
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 #hero::before {
