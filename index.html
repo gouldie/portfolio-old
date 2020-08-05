@@ -15,14 +15,16 @@
   <body>
     <section id='hero'>
       <div class='header'>
-        <p class='skills-button'>Skills</p>
-        <p class='projects-button'>Projects</p>
-        <p class='contact-button'>Contact</p>
+        <p class='logo'>Matthew Gould</p>
+        <div>
+          <p class='skills-button'>Skills</p>
+          <p class='projects-button'>Projects</p>
+          <p class='contact-button'>Contact</p>
+        </div>
       </div>
       <div class='caption'>
-        <h1>Matthew Gould</h1>
-        <p>Full-Stack web developer.</p>
-        <p>React/Vue, Node, MongoDB.</p>
+        <h1>Full-stack web developer</h1>
+        <p>React/Vue, Node, MongoDB. Based in Birmingham, UK.</p>
       </div>
     </section>
 
@@ -146,6 +148,10 @@
     <script
       src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
+      document.querySelector('.logo').addEventListener('click', function() {
+        window.location.reload();
+      })
+
       document.querySelector('.skills-button').addEventListener('click', function() {
         document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' })
       })
