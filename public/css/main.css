@@ -43,6 +43,7 @@ a {
   color: #fff;
   background-image: url('../imgs/test1.jpg');
   background-size: cover;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 #hero::before {
@@ -65,7 +66,7 @@ a {
 }
 
 .caption h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 16px;
 }
 
@@ -84,6 +85,11 @@ hr {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .caption h1 {
+    font-size: 40px;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .caption {
