@@ -52,9 +52,9 @@
   /* padding: 0 20px; */
 }
 
-#skills .icon-meteor {
-  width: 130px;
-  top: -7px;
+#skills .icon-vue {
+  width: 60px;
+  /* top: -7px; */
 }
 
 @media screen and (max-width: 900px) {
@@ -68,8 +68,8 @@
   #skills .icon-nodejs {
     left: 20px;
   }
-  #skills .icon-meteor {
-    left: 21px;
+  #skills .icon-vue {
+    /* left: 21px; */
   }
   #skills .icon-mongodb {
     right: 20px;
