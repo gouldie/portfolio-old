@@ -54,6 +54,11 @@
   background-image: url("../imgs/hackernews.png");
 }
 
+.bg-img-7 {
+  min-height: 400px;
+  background-image: url("../imgs/reddit.png");
+}
+
 @media screen and (max-width: 600px) {
   .project-desc {
     padding: 10px 15px;
