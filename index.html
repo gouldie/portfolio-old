@@ -5,27 +5,38 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="description" content="Full-Stack Web Developer. Based in Birmingham, UK. I work with React.js, Vue.js, Express, MongoDB, and Node.js.">
     <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="public/css/contact.css">
+    <link rel="stylesheet" href="public/css/hero.css">
+    <link rel="stylesheet" href="public/css/skills.css">	
     <link rel="stylesheet" href="public/css/projects.css">
-    <link rel="stylesheet" href="public/css/skills.css">
+    <link rel="stylesheet" href="public/css/contact.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <title>Matthew Gould - Full-Stack Web Developer</title>
   </head>
   <body>
     <section id='hero'>
-      <div class='header'>
-        <p class='logo'>Matthew Gould</p>
-        <div>
-          <p class='skills-button'>Skills</p>
-          <p class='projects-button'>Projects</p>
-          <p class='contact-button'>Contact</p>
-        </div>
-      </div>
-      <div class='caption'>
-        <h1>Full-stack web developer</h1>
-        <p>React/Vue, Node, MongoDB. Based in Birmingham, UK.</p>
-      </div>
+			<div class='header'>
+				<p class='logo' tabindex="0">MG</p>
+				<div>
+					<p class='skills-button' tabindex="0">Skills</p>
+					<p class='projects-button' tabindex="0">Projects</p>
+					<p class='contact-button' tabindex="0">Contact</p>
+				</div>
+			</div>
+			<div class='max-width-wrapper'>
+				<div class='hero-content'>
+					<div class='caption'>
+						<h4>Hi, I'm Matthew Gould</h4>
+						<h1>Full-Stack</h1>
+						<h1>Web Developer</h1>
+					</div>
+				</div>
+				<div class='laptop'>
+					<img src='public/imgs/laptop.jpg' />
+				</div>
+			</div>
+			
     </section>
 
     <section id='skills'>
@@ -91,40 +102,6 @@
       <a href='https://gouldie.github.io/hackernews' target='_blank'>
         <div class='bg-img bg-img-6'></div>
       </a>
-
-      <!-- <div class='project-desc'>
-        <h3>Simon Game</h3>
-        <p>A recreation of Simon, an electronic memory game released in 1978.
-          Turn on, press start and match the sequence for as long as possible.</p>
-        <p>Created as part of the <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a> tutorial series.</p>
-        <p>Tech used: HTML, CSS, JQuery.</p>
-      </div>
-
-      <a href='https://gouldie.github.io/simon-game/' target='_blank'>
-        <div class='bg-img bg-img-2'></div>
-      </a>
-
-      <div class='project-desc'>
-        <h3>Roguelike Dungeon Crawler</h3>
-        <p>2D. Tile-based. Procedurally generated levels. Permanent death. Gather
-          resources and defeat enemies to become stronger. Defeat the boss to beat the game.</p>
-        <p>Created as part of the <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a> tutorial series.</p>
-        <p>Tech used: React, HTML, CSS.</p>
-      </div> -->
-
-      <!-- <a href='https://gouldie.github.io/roguelike/' target='_blank'>
-        <div class='bg-img bg-img-3'></div>
-      </a> -->
-
-      <!-- <div class='project-desc'>
-        <h3>Workout Log</h3>
-        <p>Create workout routines from a list of exercises. Save, edit, delete them. Simple CRUD app.</p>
-        <p>Tech used: Node, Express, MongoDB, React, Redux, Webpack, Babel, ES6.</p>
-      </div>
-
-      <a href='https://wklog.herokuapp.com/' target='_blank'>
-        <div class='bg-img bg-img-4'></div>
-      </a> -->
     </section>
 
     <section id='contact'>
@@ -145,8 +122,6 @@
       <img src="public/imgs/linkedin.svg" alt="linkedin icon" onClick='window.open("https://www.linkedin.com/in/matthew-gould/")'>
     </section>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js'></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script>
       document.querySelector('.logo').addEventListener('click', function() {
         window.location.reload();

@@ -6,6 +6,10 @@
   background: #252934;
 }
 
+#contact h2 {
+	color: white;
+}
+
 form {
   /* display: block; */
   width: 90%;
