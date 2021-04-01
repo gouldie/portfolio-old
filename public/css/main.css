@@ -32,9 +32,12 @@
 
 body {
   margin: 0;
-	font-family: 'Josefin Sans';
   text-rendering: optimizeLegibility;
   overflow-y: auto;
+}
+
+* {
+	font-family: 'Josefin Sans';
 }
 
 a {

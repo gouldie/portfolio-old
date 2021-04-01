@@ -50,7 +50,7 @@ input, textarea, button {
   box-sizing: border-box;
   outline: none;
   border: 0;
-  padding: 10px 15px;
+  padding: 13px 15px 10px;
   background: #151b21;
   font-size: 12pt;
   margin-bottom: 3px;
@@ -61,7 +61,6 @@ textarea {
   min-height: 150px;
   margin-bottom: 15px;
   margin-right: 0 !important;
-  font-family: Helvetica;
 }
 
 button[type=submit] {
