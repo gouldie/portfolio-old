@@ -1,6 +1,6 @@
 #hero {
   height: 100vh;
-	background: linear-gradient(112deg, white 49%, #9ab7a2 0%);
+	background: linear-gradient(112deg, white calc(49% - 1px), #9ab7a2 49%);
 }
 
 .header {
@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 800px) {
 	#hero {
-		background: linear-gradient(130deg, white 49%, #9ab7a2 0%);
+		background: linear-gradient(130deg, white calc(49% - 1px), #9ab7a2 49%);
 	}
 
 	.caption {
