@@ -27,6 +27,7 @@
 }
 
 * {
+	font-family: 'Josefin Sans';
   box-sizing: border-box;
 }
 
@@ -36,13 +37,9 @@ body {
   overflow-y: auto;
 }
 
-* {
-	font-family: 'Josefin Sans';
-}
-
-a {
-  color: steelblue;
-  text-decoration: none;
+hr {
+  width: 50px;
+  margin-bottom: 0;
 }
 
 .max-width-wrapper {
