@@ -4,24 +4,21 @@
 
 h2 {
   color: gray;
-  /* margin-top: 50px; */
 	margin: 0;
   text-align: center;
-  /* color: #fff; */
+	font-size: 26px;
 }
 
 .project-desc {
-  color: #777;
-  background-color: white;
-  text-align: center;
+  color: gray;
   padding: 25px 30px;
-  text-align: left;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .bg-img {
   position: relative;
   opacity: 0.65;
-  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

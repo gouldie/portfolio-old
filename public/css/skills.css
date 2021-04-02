@@ -8,9 +8,6 @@
 
 .icon-container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
   margin: 30px auto 0;
   padding: 0 30px;
   max-width: 1000px;
@@ -25,7 +22,6 @@
 
 #skills img {
   width: 100px;
-  /* padding: 10px; */
   position: relative;
 }
 
@@ -34,7 +30,6 @@
 }
 
 #skills .icon-express {
-  /* width: 120px; */
   top: 5px;
 }
 
@@ -49,29 +44,27 @@
 
 #skills .icon-sass {
   width: 80px;
-  /* padding: 0 20px; */
 }
 
 #skills .icon-vue {
   width: 60px;
-  /* top: -7px; */
 }
 
 @media screen and (max-width: 900px) {
   .icon-container {
     flex-direction: column;
   }
+
   .icon-container div {
     width: 100%;
     padding: 20px 10px;
   }
-  #skills .icon-nodejs {
-    left: 20px;
-  }
-  #skills .icon-vue {
-    /* left: 21px; */
-  }
+
   #skills .icon-mongodb {
-    right: 20px;
+		left: 10px;
   }
+
+	#skills .icon-express {
+		right: 10px;
+	}
 }
