@@ -2,15 +2,15 @@
   padding: 30px 0 0;
 }
 
-h2 {
+#projects h2 {
   color: gray;
-	margin: 0;
+	/* margin: 0; */
   text-align: center;
 	font-size: 26px;
 }
 
 .project-desc {
-  color: gray;
+  color: rgb(80, 80, 80);
   padding: 25px 30px;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -22,50 +22,34 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 400px;
 }
 
 .bg-img-1 {
-  min-height: 400px;
   background-image: url("../imgs/group.png");
 }
 
 .bg-img-2 {
-  min-height: 400px;
-  background-image: url("../imgs/simon.png");
+  background-image: url("../imgs/reddit.png");
 }
 
 .bg-img-3 {
-  min-height: 400px;
-  background-image: url("../imgs/roguelike.png");
-}
-
-.bg-img-4 {
-  min-height: 400px;
-  background-image: url("../imgs/wklog.png");
-}
-
-.bg-img-5 {
-  min-height: 400px;
   background-image: url("../imgs/modelling.png");
 }
 
-.bg-img-6 {
-  min-height: 400px;
+.bg-img-4 {
   background-image: url("../imgs/hackernews.png");
-}
-
-.bg-img-7 {
-  min-height: 400px;
-  background-image: url("../imgs/reddit.png");
 }
 
 @media screen and (max-width: 600px) {
   .project-desc {
     padding: 10px 15px;
   }
+
   .project-desc h3 {
     font-size: 17px;
   }
+	
   .project-desc p {
     font-size: 14px;
   }
