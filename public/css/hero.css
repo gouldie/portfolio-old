@@ -1,18 +1,20 @@
 #hero {
   height: 100vh;
-	background: linear-gradient(112deg, white calc(49% - 1px), #9ab7a2 49%);
+  background: #2a2a2a;
+  position: relative;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-	align-items: flex-start;
+  align-items: flex-start;
   padding: 15px;
 }
 
 .header span {
-	cursor: pointer;
-	font-weight: 500;
+  cursor: pointer;
+  font-weight: 500;
+  font-weight: bold;
 }
 
 .header-links {
@@ -20,28 +22,31 @@
 }
 
 .header-links span {
-	margin-left: 15px;
-	padding: 3px 5px;
+  margin-left: 15px;
+  padding: 3px 5px;
+  color: #fff;
 }
 
 .header-links span:hover {
-  color: #2f4456;
+  color: grey;
 }
 
 .logo {
-	border: 1px solid grey;
-	padding: 5px 3px 3px 3px !important;
-	border-radius: 3px;
+  border: 1px solid grey;
+  padding: 5px 3px 3px 3px !important;
+  border-radius: 3px;
+  color: #fff;
 }
 
 .caption {
-	margin-top: 25vh;
-	margin-left: 10vh;
+  margin-top: 25vh;
+  margin-left: 10vh;
+  color: #fff;
 }
 
 .caption h4 {
-	font-weight: 300;
-	margin-top: 0;
+  font-weight: 300;
+  margin-top: 0;
 }
 
 .caption h1 {
@@ -50,14 +55,23 @@
 }
 
 .laptop {
-	width: 350px;
-	position: absolute;
-	right: 14%;
-	bottom: 50px;
+  width: 350px;
+  position: absolute;
+  right: 14%;
+  bottom: 50px;
 }
 
 .laptop img {
-	width: 100%;
+  width: 100%;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -67,28 +81,24 @@
 }
 
 @media screen and (max-width: 800px) {
-	#hero {
-		background: linear-gradient(130deg, white calc(49% - 1px), #9ab7a2 49%);
-	}
+  .caption {
+    margin-left: 5vh;
+  }
 
-	.caption {
-		margin-left: 5vh;
-	}
-
-	.laptop {
-		width: 300px;
-	}
+  .laptop {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.laptop {
-		width: 200px;
-		right: 30px;
-		bottom: 30px;
-	}
+  .laptop {
+    width: 200px;
+    right: 30px;
+    bottom: 30px;
+  }
 
-	.caption {
-		margin-top: 20vh;
-		margin-left: 2vh;
-	}
+  .caption {
+    margin-top: 20vh;
+    margin-left: 2vh;
+  }
 }
